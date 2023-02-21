@@ -6,19 +6,49 @@
 }
 :root{
     --min_height_header: 650px;
-    --min_height_head_cont: 30px;
+    --min_height_head_cont: 50px;
     --min_height_main_cont: 700px;
     --min_heigth_last_box: calc(var(--min_height_main_cont) + 200px);
     --dist_container: 100px;
     --width_nav_c: 75%;
     --width_boxes: 70%;
-}
-
-ul li{
-    display: inline-block;
-    margin: 0 10px;
+    --font-primary: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /* END: reset */
+
+.button_dark{
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+    border-radius: 28px;
+    padding: 16px 32px;
+    background-color: #23272A;
+
+    margin: 30px;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+.button_white{
+
+    display: flex;
+    flex-direction: row;
+
+    font-size: 20px;
+    border-radius: 28px;
+    padding: 16px 32px;
+    background-color: #FFFFFF;
+
+    margin: 30px;
+    align-items: center;
+    text-decoration: none;
+    color: #23272A;
+
+}
 
 /* START: header */
 header{
@@ -26,8 +56,9 @@ header{
     flex-direction: column;
     align-items: center;
 
-    background-color: lightblue;
-    min-height: var(--min_height_header);
+    background-color: #255EE9;
+    min-height: calc( var(--min_height_header) + 20px );
+
 }
 
 .nav_flex_container{
@@ -37,55 +68,50 @@ header{
     justify-content: space-between;
     align-items: center;
 
-    background-color: orange;
     min-height: var(--min_height_head_cont);
-    width: 80%;
+    width: 70%;
     margin: auto;
 
-}
-
-.card_l{
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    
-    min-height: var(--min_height_head_cont);
-    width: calc((100% - var(--width_nav_c))/2 );
-    border: 1px solid black;
-    border-style: dashed;
     padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 18px;
 
 }
 
-.card_c{
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    min-height: var(--min_height_head_cont);
-    width: var(--width_nav_c);
-    border: 1px solid black;
-    border-style: dashed;
+ul{
     list-style-type: none;
 }
 
-.card_r{
+ul li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.button_login{
     
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: right;
 
-    min-height: var(--min_height_head_cont);
-    width: calc((100% - var(--width_nav_c))/2 );
-    border: 1px solid black;
-    border-style: dashed;
-    padding-right: 10px;
+    border-radius: 40px;
+    padding: 16px 32px;
+    background-color: #FFFFFF;
+
+    align-items: center;
     text-decoration: none;
+    color: #23272A;
+
+    padding: 7px 16px;
 
 }
 
@@ -96,17 +122,43 @@ header{
     align-items: center;
 
     background-color: #404EED;
+    background-image: url(../img/jumbo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
     width: 100%;
     min-height: calc(var(--min_height_header) - 50px);
 
 }
 
 .pink_box{
-    background-color: violet;
+
     min-height: calc(var(--min_height_header) - var(--dist_container));
-    /* height: calc(var(--min_height_header) - var(--dist_container)); */
     width: 55%;
     margin: auto;
+
+    padding-top: 5px;
+    padding-left: 4%;
+    padding-right: 4%;
+
+    text-align: center;
+    color: white;
+
+}
+
+.inside_pink_box{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+
+    /* to be then deleated */
+    border: 5px dashed yellow;
 } /* END: barra di download */
 
 /* END: header */
@@ -160,7 +212,7 @@ main{
     width: var(--width_boxes);
     min-height: calc(var(--min_height_main_cont) - var(--dist_container));
     margin: auto;
-    
+
 }
 
 .box_1{
@@ -220,7 +272,7 @@ footer{
 }
 
 .sub_foot_box{ /* START: barra di download */
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
