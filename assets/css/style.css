@@ -1,8 +1,10 @@
 /* START: reset */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
 }
 :root{
     --min_height_header: 600px;
@@ -10,7 +12,6 @@
     --min_heigth_last_box: calc(var(--min_height_main_cont) + 200px);
     --width_nav_c: 75%;
     --width_boxes: 70%;
-    --font-primary: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /* END: reset */
 
@@ -197,6 +198,18 @@ main{
 
 }
 
+.main_box{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: var(--width_boxes);
+    margin: auto;
+
+}
+
 .last_box{
 
     display: flex;
@@ -209,7 +222,6 @@ main{
     
     padding: 10px;
 
-    /* border: 1px solid red; */
 }
 
 .image_big{
@@ -237,20 +249,6 @@ main{
     flex-direction: row-reverse;
 }
 
-.main_box{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
-    width: var(--width_boxes);
-    margin: auto;
-
-    border: 1px solid red;
-
-}
-
 .image_logo{
     max-height: 50px;
 }
@@ -261,13 +259,9 @@ main{
 }
 
 .box_2{
-    
     width: 35%;
-    margin: auto;
-    max-height: 440px;
-    
+    margin: auto;    
     padding: 5px;
-
 }
 /* END: main */
 
@@ -337,5 +331,4 @@ footer{
     display: inline-block;
     margin-right: 5px;
 }
-
 /* END: footer */
