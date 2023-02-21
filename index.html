@@ -14,7 +14,7 @@
         
         <!-- barra di navigazione -->
         <nav class="nav_flex_container">
-            <div> <img src="./assets/img/logo.svg" alt="logo" > </div>
+            <img class="image_logo" src="./assets/img/logo.svg" alt="logo" >
             <ul>
                 <li><a href="#">Scarica</a></li>
                 <li><a href="#">Perchè Discord</a></li>
@@ -39,13 +39,14 @@
                     
                 <a href="#" class="button_white">
                     <svg style="max-width: 24; max-height: 24;">
-                        <path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>
-                        <path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path>
+                        <g fill="#23272A">
+                            <path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>
+                            <path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path>
+                        </g>
                     </svg>
                     <span>
                         Scarica per Mac
                     </span>
-                        
                 </a>
                 <a href="#" class="button_dark">Apri Discord nel tuo browser</a>
 
@@ -80,6 +81,7 @@
         <div class="nav_main">
             
             <div class="main_box">
+
                 <img class="image_class" src="./assets/img/item2.svg" alt="item2" >
                 <div class="box_2">
                     <h2 style="font-size: 40px; margin-bottom: 40px; color: #23272A; text-align: right;">
@@ -108,11 +110,14 @@
 
         </div>
         <div class="nav_main">
+
             <div class="last_box">
+
 
                 <h2 style="font-size: 40px; margin-bottom: 40px; color: #23272A; text-align: center;">
                     Tecnologia affidabile per tenersi in contatto
                 </h2>
+
 
                 <p style="font-size: 20px; color: #23272A; text-align: center; margin-bottom: 30px;">
                     Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai un ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.
@@ -120,7 +125,30 @@
 
                 <img class="image_big" src="./assets/img/item4-big.svg" alt="item4-big">
 
+
+                <div class="spark_cont">
+                    <img style="max-height: 50px;" src="./assets/img/stars.svg" alt="stars">
+                    <h3 style="font-size: 25px; color: #23272A; text-align: center">
+                        Pronto a iniziare iniziare la tua avventura?
+                    </h3>
+                </div>
+
+                <a href="#" class="button_last">
+                    <svg style="max-width: 24; max-height: 24;">
+                        <g fill="#FFFFFF">
+                            <path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>
+                            <path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path>
+                        </g>
+                    </svg>
+
+                    <span>
+                        Scarica per Mac
+                    </span>
+                </a>
+
+
             </div>
+
         </div>
         <!-- END: main sections -->
 
@@ -131,18 +159,38 @@
     <footer>
         
         <div class="foot_box">
-            <div class="foot_sub_box"></div>
-            <div class="foot_sub_box"></div>
-            <div class="foot_sub_box"></div>
-            <div class="foot_sub_box"></div>
-            <div class="foot_sub_box"></div>
+            <div class="foot_sub_box">
+                <h3 style="font-size: 25px; color: #7983f5; text-align: left">
+                    Il tuo posto per parlare
+                </h3>
+
+                <div class="custom-select" style="width:100px;">
+                    <select>
+                        <option value="ita">Italiano</option>
+                        <option value="eng">Inglese</option>
+                        <option value="fra">Francese</option>
+                    </select>
+                  </div>
+
+
+            </div>
+            <div class="foot_sub_box">
+
+            </div>
+            <div class="foot_sub_box">
+
+            </div>
+            <div class="foot_sub_box">
+
+            </div>
+            <div class="foot_sub_box">
+
+            </div>
         </div>
 
         <div class="sub_foot_box">
-            <a href="#">
-                <img src="" alt="img-discord">
-            </a>
-            <a href="#">Registrati</a>
+            <img style="max-height: 30px;" src="./assets/img/logo.svg" alt="logo" >
+            <a href="#" class="button_last_dark">Registrati</a>
         </div>
 
     </footer>
