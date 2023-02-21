@@ -6,10 +6,8 @@
 }
 :root{
     --min_height_header: 600px;
-    --min_height_head_cont: 50px;
     --min_height_main_cont: 700px;
     --min_heigth_last_box: calc(var(--min_height_main_cont) + 200px);
-    --dist_container: 100px;
     --width_nav_c: 75%;
     --width_boxes: 70%;
     --font-primary: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -39,9 +37,10 @@
     flex-direction: column;
 
     font-size: 15px;
+    font-weight: bold;
     border-radius: 28px;
     padding: 7px 9px;
-    background-color: #23272A;
+    background-color: #7983F5;
 
     margin: 30px;
     align-items: center;
@@ -103,7 +102,6 @@ header{
     justify-content: space-between;
     align-items: center;
 
-    min-height: var(--min_height_head_cont);
     width: 70%;
     margin: auto;
 
@@ -118,7 +116,7 @@ ul{
     list-style-type: none;
 }
 
-ul li{
+nav ul li{
     display: inline-block;
     margin: 0 25px;
 }
@@ -158,16 +156,11 @@ ul li a:hover{
 
     width: 100%;
     margin: 0 auto;
-    min-height: calc(var(--min_height_header) - 50px);
-
-    /* background-color: #255EE9; */
-    /* border: 1px solid red; */
 
 }
 
 .pink_box{
 
-    min-height: calc(var(--min_height_header) - var(--dist_container));
     width: 55%;
     margin: auto;
 
@@ -177,8 +170,6 @@ ul li a:hover{
 
     text-align: center;
     color: white;
-
-    /* border: 1px solid red; */
 
 }/* END: barra di download */
 
@@ -223,10 +214,8 @@ main{
 
 .image_big{
     width: 90%;
-    /* height: 850px; */
     max-height: 850px;
     align-items: top;
-    /* border: 1px solid red; */
 }
 
 .spark_cont{
@@ -300,21 +289,20 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 
-    border: 2px dashed white;
-    background-color: #4CB0AD;
+    background-color: #23272A;
     width: var(--width_boxes);
-    height: calc( 90/100*var(--min_height_header) );
     margin: auto;
+    padding: 10px;
 }
 
 .foot_sub_box{
-    border: 2px dashed white;
+    width: calc(75% / 4);
+    font-size: 17px;
+    padding-left: 15px;
 }
 
 .foot_sub_box:nth-child(1){
-    width: 30%;
-    background-color: lightgrey;
-    border: 2px dashed red;
+    width: 25%;
 }
 
 .sub_foot_box{ /* START: barra di download */
@@ -324,11 +312,30 @@ footer{
     justify-content: space-between;
     align-items: center;
 
-    background-color: orange;
     width: var(--width_boxes);
-    height: calc( 10/100*var(--min_height_header) );
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 16px;
+    border-top: 1px solid #7983F5;
+}
+
+.foot_sub_box > ul > li:nth-child(1){
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #7983F5;
+}
+
+.foot_sub_box > ul > li{
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.foot_sub_box ul{
+    margin-top: 5px;
+}
+
+.special_list_logos > li{
+    display: inline-block;
+    margin-right: 5px;
 }
 
 /* END: footer */
