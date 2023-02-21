@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root{
-    --min_height_header: 650px;
+    --min_height_header: 600px;
     --min_height_head_cont: 50px;
     --min_height_main_cont: 700px;
     --min_heigth_last_box: calc(var(--min_height_main_cont) + 200px);
@@ -59,6 +59,9 @@ header{
     background-color: #255EE9;
     min-height: calc( var(--min_height_header) + 20px );
 
+    background-image: url(../img/jumbo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .nav_flex_container{
@@ -121,13 +124,12 @@ ul li a:hover{
     flex-direction: column;
     align-items: center;
 
-    background-color: #404EED;
-    background-image: url(../img/jumbo.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
     width: 100%;
+    margin: 0 auto;
     min-height: calc(var(--min_height_header) - 50px);
+
+    /* background-color: #255EE9; */
+    /* border: 1px solid red; */
 
 }
 
@@ -144,22 +146,9 @@ ul li a:hover{
     text-align: center;
     color: white;
 
-}
+    /* border: 1px solid red; */
 
-.inside_pink_box{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-
-    /* to be then deleated */
-    border: 5px dashed yellow;
-} /* END: barra di download */
+}/* END: barra di download */
 
 /* END: header */
 
@@ -180,7 +169,8 @@ main{
     justify-content: space-between;
 
     width: 100%;
-    min-height: var(--min_height_main_cont);
+    padding: 30px;
+    background-color: #FFFFFF;
 
 }
 
@@ -208,31 +198,26 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    align-items: center;
+    
     width: var(--width_boxes);
-    min-height: calc(var(--min_height_main_cont) - var(--dist_container));
     margin: auto;
 
 }
 
-.box_1{
-    background-color: green;
-    min-height: calc(var(--min_height_main_cont) - var(--dist_container));
-    width: 60%;
-    margin: auto;
-
-    border: 1px solid black;
-    border-style: dashed;
+.image_class{
+    width: 65%;
+    max-height: 440px;
 }
 
 .box_2{
-    background-color: yellow;
-    min-height: calc(var(--min_height_main_cont) - var(--dist_container));
-    width: 40%;
+    
+    width: 35%;
     margin: auto;
+    max-height: 440px;
+    
+    padding: 5px;
 
-    border: 1px solid black;
-    border-style: dashed;
 }
 /* END: main */
 
