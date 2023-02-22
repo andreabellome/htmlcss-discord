@@ -14,6 +14,7 @@
     --color-black-hover:#313338;
     --color-purple: #585BBE;
     --color-purple-hover: #7983F5;
+    --max-width-val: 1400px;
 }
 /* END: reset */
 
@@ -156,7 +157,7 @@ header{
 
     font-size: 18px;
 
-    max-width: 1400px;
+    max-width: var(--max-width-val);
 
 }
 
@@ -212,7 +213,7 @@ ul li a:hover{
     text-align: center;
     color: var(--color-white);
 
-    max-width: 1400px;
+    max-width: var(--max-width-val);
 
 }/* END: barra di download */
 
@@ -250,7 +251,7 @@ main{
     width: var(--width_boxes);
     margin: auto;
 
-    max-width: 1400px;
+    max-width: var(--max-width-val);
 
 }
 
@@ -327,7 +328,7 @@ footer{
     width: var(--width_boxes);
     margin: auto;
 
-    max-width: 1400px;
+    max-width: var(--max-width-val);
 
 }
 
@@ -355,7 +356,7 @@ footer{
     margin-top: 20px;
     padding: 10px;
 
-    max-width: 1400px;
+    max-width: var(--max-width-val);
 }
 
 .foot_sub_box > ul > li:nth-child(1){
