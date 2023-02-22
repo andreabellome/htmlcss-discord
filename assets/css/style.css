@@ -1,5 +1,4 @@
 /* START: reset */
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); /* importa il font */
 
 *{
@@ -333,7 +332,7 @@ footer{
     width: 25%;
 }
 
-.sub_foot_box{ /* START: barra di download */
+.sub_foot_box{
 
     display: flex;
     flex-direction: row;
