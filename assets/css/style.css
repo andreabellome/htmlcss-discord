@@ -145,18 +145,19 @@ header{
 
 .nav_flex_container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 
     width: 70%;
+
     margin: auto;
     margin-bottom: 20px;
 
-    padding-left: 10px;
-    padding-right: 10px;
-
     font-size: 18px;
+
+    max-width: 1400px;
+
 }
 
 h2{
@@ -211,6 +212,8 @@ ul li a:hover{
     text-align: center;
     color: var(--color-white);
 
+    max-width: 1400px;
+
 }/* END: barra di download */
 
 /* END: header */
@@ -246,6 +249,8 @@ main{
     
     width: var(--width_boxes);
     margin: auto;
+
+    max-width: 1400px;
 
 }
 
@@ -322,6 +327,8 @@ footer{
     width: var(--width_boxes);
     margin: auto;
 
+    max-width: 1400px;
+
 }
 
 .foot_sub_box{
@@ -347,6 +354,8 @@ footer{
 
     margin-top: 20px;
     padding: 10px;
+
+    max-width: 1400px;
 }
 
 .foot_sub_box > ul > li:nth-child(1){
