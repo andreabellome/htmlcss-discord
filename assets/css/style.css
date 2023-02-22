@@ -139,6 +139,8 @@ header{
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
+
+    min-height: 600px;
 }
 
 .nav_flex_container{
@@ -354,7 +356,6 @@ footer{
 }
 
 .foot_sub_box > ul > li{
-    font-weight: bold;
     margin-bottom: 10px;
     color: var(--color-white);
 }
